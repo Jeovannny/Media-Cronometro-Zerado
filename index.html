@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CZ</title>
+    <link rel="icon" type="image/x-icon" sizes="64x64" href="logo.png">
+
+
+</head>
+
+<body>
+
+    <!--Janela de Bem Vindo-->
+    <div class="janela-bv">
+        <div class="janela-bv-content">
+            <h1>Notas do GP</h1>
+            <h2>Vamos calcular as notas dos leigos</h2>
+            <button class="bem-vindo-button" id="bem-vindo-button">Continue:</button>
+        </div>
+    </div>
+    <!--Fim Janela de Bem Vindo-->
+
+    <!--Cabeçalho-->
+    <header>
+        <div class="header-content">
+            <div class="titulo-header">
+                <h1>NOTAS PARA GP</h1>
+            </div>
+        </div>
+    </header>
+    <!--Fim o Cabeçalho-->
+
+    <!--Content-->
+    <div class="site-content">
+        <!--Coletando dados-->
+        <div class="site-content-texto">
+            <h1>Insira o nome do leigo(a):</h1>
+        </div>
+        <input class="CAIXAT" type="text" id="NOME" placeholder="Opicional">
+
+        <div class="site-content-texto">
+            <h1>Insira a nota dada pelo membro:</h1>
+        </div>
+        <input class="CAIXAT" type="text" id="NOTA" placeholder="Nota">
+        <br></br>
+
+        <!--Botões-->
+        <button class="BT_AD" id="btnAdicionar">Adicionar</button>
+        <button class="BT_REM" id="btnRemover">Remover</button>
+        <button class="BT_LIM" id="btnLimpar">Limpar</button>
+        <br></br>
+
+        <!--Mostrando a tabela de nomes e notas-->
+        <p class="INFOS" id="LISTA_COMBINADA"></p>
+        <p class="INFOS" id="MEDIA"></p>
+
+    </div>
+    <!-- Fim Content-->
+    <script src="script.js"></script>
+</body>
+
+</html>

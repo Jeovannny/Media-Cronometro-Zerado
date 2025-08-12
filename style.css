@@ -1,0 +1,197 @@
+/*Importando Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@800;500;400&display=swap');
+/*font-family: 'IBM Plex Sans', sans-serif; Titulo: 800 Subtitulo: 500 Texto:400*/
+
+/*Geral*/
+body {
+   overflow-x: hidden;
+   background-color: #ffffff;
+   margin: 0;
+}
+
+:root {
+   --AzulEscuro: #19568d;
+   --AzulClaro: pink;
+   --Amarelo: #f4a758;
+   --Vermelho: #f23636;
+   --Preto: #232526;
+}
+
+/*Fim Geral*/
+
+/*janela Bem Vindo*/
+.janela-bv {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.janela-bv-content {
+   background-color: var(--Vermelho);
+   padding: 10px;
+   border-radius: 10px;
+   text-align: center;
+}
+
+.bem-vindo-button {
+   background-color: var(--Preto);
+   border: none;
+   color: rgb(255, 255, 255);
+   padding: 10px 20px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+   border-radius: 10px;
+}
+
+.janela-bv h1 {
+   color: white;
+   font-family: 'IBM Plex Sans', sans-serif;
+   font-weight: 800;
+
+}
+
+.janela-bv h2 {
+   color: white;
+   font-family: 'IBM Plex Sans', sans-serif;
+   font-weight: 500;
+   font-size: 1.125em;
+}
+
+/*Fim Janela Bem Vindo*/
+
+/*Header*/
+header {
+   width: 100%;
+   padding: 1px;
+   margin-top: 0px;
+   background-color: var(--Vermelho);
+   color: #fff;
+
+}
+
+header h1 {
+   font-family: 'IBM Plex Sans', sans-serif;
+   font-size: 1.375em;
+   font-weight: 800;
+}
+
+.header-content {
+   display: flex;
+   justify-content: center;
+}
+
+@media (max-width: 600px) {
+   .janela-bv header {
+      padding: 1px;
+   }
+
+   header h1 {
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-weight: 800;
+      font-size: 1.1em;
+   }
+}
+
+/*Fim Header*/
+
+/*Content*/
+.site-content {
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: auto;
+   /* 100% da altura da viewport */
+   text-align: center;
+}
+
+.site-content-texto {
+   border: 1px solid rgba(255, 255, 255, 0);
+   border-radius: 5px;
+   padding-left: 1em;
+   padding-right: 1em;
+
+}
+
+.site-content-texto h1 {
+   font-family: 'IBM Plex Sans', sans-serif;
+   font-size: 1.125em;
+   font-weight: 600;
+   color: var(--Vermelho);
+   padding: 0;
+
+}
+
+.site-content-texto p {
+   font-family: 'IBM Plex Sans', sans-serif;
+   font-size: 1.125em;
+   font-weight: 800;
+   color: var(--Preto);
+
+}
+
+input.CAIXAT {
+   width: 5em;
+   font-size: 15px;
+   color: rgb(0, 0, 0);
+   font-family: 'Quicksand', sans-serif;
+   background-color: #ffffff;
+   border-radius: 2px;
+   border: 2px solid var(--Preto);
+   text-align: center;
+
+}
+
+input.CAIXAT#N_QUEST {
+   width: 8em;
+   font-size: 15px;
+   color: rgb(0, 0, 0);
+   font-family: 'Quicksand', sans-serif;
+   background-color: #ffffff;
+   border-radius: 2px;
+   border: 2px solid var(--Amarelo);
+   text-align: center;
+
+}
+
+button {
+   background-color: var(--Vermelho);
+   color: white;
+   border: none;
+   padding: 5px;
+   width: auto;
+   border-radius: 8px;
+   font-family: 'IBM Plex Sans', sans-serif;
+   font-weight: 550;
+   font-size: 18px;
+   border: 2px solid white;
+}
+
+.INFOS {
+   font-family: 'IBM Plex Sans', sans-serif;
+   font-size: 1.125em;
+   font-weight: 700;
+   color: var(--Preto);
+   padding: 0;
+}
+
+#MEDIA {
+   font-family: 'IBM Plex Sans', sans-serif;
+   font-size: 1.3em;
+   font-weight: 900;
+   font-style: italic;
+   color: var(--Vermelho);
+   padding: 0;
+   text-decoration: underline;
+}
+
+/*Fim Content*/
